@@ -1,4 +1,4 @@
-package Modulo1.Clase11_04.Ejercicio3;
+package Modulo1.Clase11_04.TP1.Ejercicio3;
 
 public abstract class LibroDeTexto extends Libro{
     private int curso;

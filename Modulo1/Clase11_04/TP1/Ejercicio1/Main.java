@@ -1,4 +1,4 @@
-package Modulo1.Clase11_04.Ejercicio1;
+package Modulo1.Clase11_04.TP1.Ejercicio1;
 
 public class Main {
     public static void main(String[] args) {

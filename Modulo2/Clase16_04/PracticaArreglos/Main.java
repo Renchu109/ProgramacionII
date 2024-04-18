@@ -1,4 +1,4 @@
-package Modulo1.Clase16_04.PracticaArreglos;
+package Modulo2.Clase16_04.PracticaArreglos;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;

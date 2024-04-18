@@ -1,4 +1,4 @@
-package Modulo1.Clase11_04.Ejercicio2;
+package Modulo1.Clase11_04.TP1.Ejercicio2;
 
 public abstract class FiguraGeometrica {
     abstract double area();
