@@ -1,20 +1,13 @@
 package Modulo1.Clase09_04.AsocUnidireccional;
 
 public class Universidad {
-    private String nombreUniversidad;
+    private String nombre;
 
-    public Universidad() {
+    public String getNombre() {
+        return nombre;
     }
 
-    public Universidad(String nombreUniversidad) {
-        this.nombreUniversidad = nombreUniversidad;
-    }
-
-    public String getNombreUniversidad() {
-        return nombreUniversidad;
-    }
-
-    public void setNombreUniversidad(String nombreUniversidad) {
-        this.nombreUniversidad = nombreUniversidad;
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
     }
 }

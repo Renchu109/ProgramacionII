@@ -1,44 +1,38 @@
 package Modulo1.Clase09_04.AsocUnidireccional;
 
+import java.util.List;
+
 public class Estudiante {
-    private String nombreEstudiante;
-    private Universidad[] universidad = new Universidad[3];
-    private int numEstudiante = 0;
+    private String nombre;
+    private Universidad universidad;
 
-
-    public Estudiante() {
+    public String getNombre() {
+        return nombre;
     }
 
-    public Estudiante(String nombreEstudiante) {
-        this.nombreEstudiante = nombreEstudiante;
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
     }
 
-    public String getNombreEstudiante() {
-        return nombreEstudiante;
-    }
-
-    public void setNombreEstudiante(String nombreEstudiante) {
-        this.nombreEstudiante = nombreEstudiante;
-    }
-
-    public Universidad[] getUniversidad() {
+    public Universidad getUniversidad() {
         return universidad;
     }
 
-    public void setUniversidad(Universidad[] universidad) {
+    public void setUniversidad(Universidad universidad) {
         this.universidad = universidad;
     }
 
-    public int getNumEstudiante() {
-        return numEstudiante;
+    public void mostrar(){
+        System.out.println(
+                "El estudiante "+nombre+" asiste a la "
+                        +universidad.getNombre());
     }
 
-    public void setNumEstudiante(int numEstudiante) {
-        this.numEstudiante = numEstudiante;
-    }
-
-    public void cambiarUniversidad(){
-        universidad[numEstudiante] = new Universidad("Universidad Nacional de Cuyo");
-        numEstudiante++;
+    public void cambiarUniversidad(Estudiante est, Universidad uni1, Universidad uni2){
+        if(est.universidad.getNombre().equals(uni1.getNombre())){
+            est.setUniversidad(uni2);
+        }else {
+            est.setUniversidad(uni1);
+        }
     }
 }
