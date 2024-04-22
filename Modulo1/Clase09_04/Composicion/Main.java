@@ -19,5 +19,7 @@ public class Main {
         for(int i=0;i<casita.getPuertas().length;i++){
             System.out.println("-"+casita.getPuertas()[i].getMaterial());
         }
+
+
     }
 }
